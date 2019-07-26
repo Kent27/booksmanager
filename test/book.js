@@ -26,7 +26,7 @@ describe("Books", () => {
     it("it should GET all the books", done => {
       chai
         .request(server)
-        .get("/api/books")
+        .get("/books")
         .end((err, res) => {
           res.should.have.status(200);
           res.body.should.be.a("array");
@@ -48,7 +48,7 @@ describe("Books", () => {
       };
       chai
         .request(server)
-        .post("/api/books")
+        .post("/books")
         .send(book)
         .end((err, res) => {
           res.should.have.status(400);
@@ -75,7 +75,7 @@ describe("Books", () => {
       };
       chai
         .request(server)
-        .post("/api/books")
+        .post("/books")
         .send(book)
         .end((err, res) => {
           res.should.have.status(400);
@@ -100,7 +100,7 @@ describe("Books", () => {
       };
       chai
         .request(server)
-        .post("/api/books")
+        .post("/books")
         .send(book)
         .end((err, res) => {
           res.should.have.status(200);
@@ -119,7 +119,7 @@ describe("Books", () => {
     it("it should fail to GET the specified book", done => {
       chai
         .request(server)
-        .get("/api/books/123")
+        .get("/books/123")
         .end((err, res) => {
           res.should.have.status(404);
           res.body.should.be.a("object");
@@ -135,7 +135,7 @@ describe("Books", () => {
     it("it should GET the specified book", done => {
       chai
         .request(server)
-        .get("/api/books/5d3aee0a1d9466422f318850")
+        .get("/books/5d3aee0a1d9466422f318850")
         .end((err, res) => {
           res.should.have.status(200);
           res.body.should.be.a("object");
@@ -152,7 +152,7 @@ describe("Books", () => {
     it("it should fail to find the specified book", done => {
       chai
         .request(server)
-        .get("/api/books/123")
+        .get("/books/123")
         .end((err, res) => {
           res.should.have.status(404);
           res.body.should.be.a("object");
@@ -173,7 +173,7 @@ describe("Books", () => {
       };
       chai
         .request(server)
-        .put("/api/books/5d3aee0a1d9466422f318850")
+        .put("/books/5d3aee0a1d9466422f318850")
         .send(book)
         .end((err, res) => {
           res.should.have.status(400);
@@ -200,7 +200,7 @@ describe("Books", () => {
       };
       chai
         .request(server)
-        .put("/api/books/5d3aee0a1d9466422f318850")
+        .put("/books/5d3aee0a1d9466422f318850")
         .send(book)
         .end((err, res) => {
           res.should.have.status(400);
@@ -225,7 +225,7 @@ describe("Books", () => {
       };
       chai
         .request(server)
-        .put("/api/books/5d3aee0a1d9466422f318850")
+        .put("/books/5d3aee0a1d9466422f318850")
         .send(book)
         .end((err, res) => {
           res.should.have.status(200);
@@ -242,7 +242,7 @@ describe("Books", () => {
     it("it should fail to find the specified book", done => {
       chai
         .request(server)
-        .delete("/api/books/123")
+        .delete("/books/123")
         .end((err, res) => {
           res.should.have.status(404);
           res.body.should.be.a("object");
@@ -265,7 +265,7 @@ describe("Books", () => {
       book.save((err, book) => {
         chai
           .request(server)
-          .delete("/api/books/" + book.id)
+          .delete("/books/" + book.id)
           .end((err, res) => {
             res.should.have.status(200);
             done();

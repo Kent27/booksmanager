@@ -15,14 +15,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/books",
+					"raw": "http://localhost:5000/books",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5000",
 					"path": [
-						"api",
 						"books"
 					]
 				}
@@ -39,16 +38,15 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/books/5d3aecc1420d273fc4278cb1",
+					"raw": "http://localhost:5000/books/5d3aed367689c74054e86a9a",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5000",
 					"path": [
-						"api",
 						"books",
-						"5d3aecc1420d273fc4278cb1"
+						"5d3aed367689c74054e86a9a"
 					]
 				},
 				"description": "param: id"
@@ -72,16 +70,15 @@
 					"raw": "{\n\t\"title\":\"Fun Programming\",\n\t\"author\":\"Kent\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/books/5d3aecc1420d273fc4278cb1",
+					"raw": "http://localhost:5000/books/5d3aed367689c74054e86a9a",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5000",
 					"path": [
-						"api",
 						"books",
-						"5d3aecc1420d273fc4278cb1"
+						"5d3aed367689c74054e86a9a"
 					]
 				},
 				"description": "param: id\nbody:\n{\n\t\"title\":string,\n\t\"author\":string,\n\t\"isbn\":string,\n\t\"publishedOn\":numeric,\n\t\"numberOfPages\":numeric\n}"
@@ -102,17 +99,16 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"title\":\"Secret\",\n\t\"author\":\"Kent\",\n\t\"isbn\":\"abc123\",\n\t\"publishedOn\":\"2020\",\n\t\"numberOfPages\":\"200\"\n}"
+					"raw": "{\n\t\"title\":\"Secret2\",\n\t\"author\":\"Kent\",\n\t\"isbn\":\"abc123\",\n\t\"publishedOn\":\"2020\",\n\t\"numberOfPages\":\"200\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/books",
+					"raw": "http://localhost:5000/books",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5000",
 					"path": [
-						"api",
 						"books"
 					]
 				},
@@ -137,16 +133,15 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/books/5d3afa01d2a8ca5474d2a66a",
+					"raw": "http://localhost:5000/books/5d3afcf25617735bcdac3505",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5000",
 					"path": [
-						"api",
 						"books",
-						"5d3afa01d2a8ca5474d2a66a"
+						"5d3afcf25617735bcdac3505"
 					]
 				},
 				"description": "param: id"

@@ -21,7 +21,7 @@ mongoose
   .catch(err => console.log(err));
 
 // Use Routes
-app.use("/api/books", books);
+app.use("/books", books);
 
 // Server static assets if in production
 if (process.env.NODE_ENV === "production") {

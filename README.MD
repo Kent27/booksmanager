@@ -1,6 +1,6 @@
-# Programming Test: Book Manager Back End (Using Express and MongoDB)
+# Book Manager Back End (Using Express and MongoDB)
 
-> Back End Rest API for Book Manager
+> Programming Test: Back End Rest API for Book Manager
 
 ## Requirement
 
@@ -36,9 +36,10 @@ npm run server
 npm test
 ```
 
-```
-
 ## API Documentation
 
 To check the API Endpoints please open the `BookManager.postman_collection.json` file using Postman.
+
+```
+
 ```
