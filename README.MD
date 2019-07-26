@@ -39,7 +39,3 @@ npm test
 ## API Documentation
 
 To check the API Endpoints please open the `BookManager.postman_collection.json` file using Postman.
-
-```
-
-```
