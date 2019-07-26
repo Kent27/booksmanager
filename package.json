@@ -4,8 +4,8 @@
   "description": "Lightweight App for Managing Books",
   "main": "server.js",
   "scripts": {
-    "test": "mocha --timeout 20000",
-    "server": "nodemon server.js"
+    "test": "NODE_ENV=test PORT=5001 mocha --timeout 20000",
+    "server": "NODE_ENV=dev nodemon server.js"
   },
   "author": "Kent",
   "license": "ISC",

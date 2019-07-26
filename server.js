@@ -7,7 +7,6 @@ const books = require("./routes/api/books");
 
 const app = express();
 
-process.env.NODE_ENV = "test";
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

@@ -5,7 +5,10 @@ let chaiHttp = require("chai-http");
 let server = require("../server");
 let should = chai.should();
 
+// Change environment for test
 process.env.NODE_ENV = "test";
+process.env.PORT = "5001";
+
 chai.use(chaiHttp);
 
 describe("Books", () => {
