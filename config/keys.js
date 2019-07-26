@@ -1,4 +1,5 @@
-module.exports = {
-  mongoURI: "mongodb://kent:password123@ds353957.mlab.com:53957/books_manager",
-  secretOrKey: "secret"
-};
+if (process.env.NODE_ENV === "test") {
+  module.exports = require("./keys_test");
+} else {
+  module.exports = require("./keys_dev");
+}
